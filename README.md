@@ -1,12 +1,19 @@
 # GitHub Demo Project
 
-This repository demonstrates the use of GitHub Pages, Dependabot, and GitHub Actions within a basic Node.js project.
+This repository demonstrates how to use Github to effectively and collaboratively build and deploy projects.
 
 ## Features
 
-- **GitHub Pages**: Host a static website.
+- **Repositories**: Store your code, dependencies, and assets.
+- **Branching**: Create snapshots to work on separately.
+- **Pull Requests**: Propose changes to branches.
+- **Collaboration Tools**: Facilitate discussion around proposed changes.
+- **Wikis and Documentation**: A centralized knowledge-base for your project.
 - **Dependabot**: Automatically manage and update dependencies.
 - **GitHub Actions**: CI/CD workflows for automated testing.
+- **GitHub Pages**: Host a static website.
+- **GitHub Marketplace**: Platform offering tools and services that integrate with Github.
+
 
 ## Getting Started
 
