@@ -4,7 +4,7 @@ This repository demonstrates using Github to effectively and collaboratively bui
 
 ## Features
 
-- **Repositories**: Store your code, dependencies, and assets.
+- **Repositories**: Store your code, dependencies, documentation, and assets.
 - **Branching**: Create snapshots to work on separately.
 - **Pull Requests**: Propose changes to branches.
 - **Collaboration Tools**: Facilitate discussion around proposed changes.
