@@ -1,4 +1,4 @@
-# GitHub Demo Project
+# GitHub Demoed Project
 
 This repository demonstrates how to use Github to effectively and collaboratively build and deploy projects.
 
