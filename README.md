@@ -1,6 +1,6 @@
 # GitHub Demo Project
 
-This repository demonstrates how to use Github to effectively and collaboratively build and deploy projects.
+This repository demonstrates using Github to effectively and collaboratively build and deploy projects.
 
 ## Features
 
