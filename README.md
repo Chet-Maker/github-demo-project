@@ -5,7 +5,7 @@ This repository demonstrates how to use Github to effectively and collaborativel
 ## Features
 
 - **Repositories**: Store your code, dependencies, and assets.
-- **Branching**: Create snapshots to work on separately.
+- **Branching and Editing**: Create snapshots to work on separately.
 - **Pull Requests**: Propose changes to branches.
 - **Collaboration Tools**: Facilitate discussion around proposed changes.
 - **Wikis and Documentation**: A centralized knowledge-base for your project.
@@ -17,7 +17,7 @@ This repository demonstrates how to use Github to effectively and collaborativel
 
 ## Getting Started
 
-### Prerequisites
+### Prerequisites!
 
 - [Node.js](https://nodejs.org/) installed on your machine.
 
