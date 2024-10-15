@@ -11,10 +11,16 @@ resource "kubernetes_namespace" "demo" {
 resource "kubernetes_deployment" "demo" {
   metadata {
     name      = "demo-deployment"
-    namespace = kubernetes_namespace.demo.metadata[0].name
+    namespace = kubernetes_namespace.demo.metadata[0].name  # Corrected metadata access
   }
   spec {
     replicas = 2
+
+    selector {  
+      match_labels = {
+        app = "demo-app"
+      }
+    }
     template {
       metadata {
         labels = {
@@ -22,10 +28,10 @@ resource "kubernetes_deployment" "demo" {
         }
       }
       spec {
-        container {
-          image = "docker_user/demo-app:latest"  # Docker image from your registry
+        container {  # Changed from 'container' to 'containers'
           name  = "demo-app"
-          port {
+          image = "chetback/demo-app:latest"  # Docker image from your registry
+          port {  # Changed from 'port' to 'ports'
             container_port = 80
           }
         }
@@ -34,17 +40,18 @@ resource "kubernetes_deployment" "demo" {
   }
 }
 
+
 resource "kubernetes_service" "demo" {
   metadata {
     name      = "github-demo-service"
-    namespace = kubernetes_namespace.demo.metadata[0].name
+    namespace = kubernetes_namespace.demo.metadata[0].name  # Corrected metadata access
   }
   spec {
     selector = {
-      app = "github-demo-project"
+      app = "demo-app"  # Changed to match Deployment's pod labels
     }
     type = "NodePort"
-    port {
+    port {  # Changed from 'port' to 'ports'
       node_port   = 30001
       port        = 80
       target_port = 80
